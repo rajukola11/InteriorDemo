@@ -1,0 +1,616 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and header styling */
+body {
+    /* font-family: 'Playfair Display', serif;  */
+    background-color: #f0f0f0;
+    color: #333;
+    /* font-family: 'Arial', sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    /* Reduced height */
+    padding: 15px 0;
+    /* Reduced padding */
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    /* Reduced shadow */
+    z-index: 1000;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling for the brand title */
+.brand-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.75rem;
+    /* Reduced font size */
+    color: #2c3e50;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.brand-title span {
+    color: #8e44ad;
+    /* Accent color for INTERIORS */
+    font-weight: 400;
+}
+
+/* Styling for the navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.75rem;
+    /* Reduced font size */
+    color: #333;
+    margin-left: 10px;
+    /* Reduced spacing between links */
+    padding: 5px 10px;
+    /* Reduced padding */
+    border-radius: 3px;
+    /* Reduced border-radius */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Button styling for 'Get Free Quote' */
+.nav-links .quote-btn {
+    background-color: #8e44ad;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 15px;
+    /* Reduced padding */
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-links .quote-btn:hover {
+    background-color: #6c3483;
+    /* Darker purple on hover */
+}
+
+/* Transition when scrolling */
+header {
+    transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+
+header.scrolled {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .brand-title {
+        font-size: 1rem;
+        /* Adjusted font size for larger screens */
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        /* Adjusted font size */
+    }
+}
+
+@media (min-width: 1024px) {
+    .brand-title {
+        font-size: 1.25rem;
+        /* Adjusted font size for desktops */
+    }
+}
+
+
+#d2 {
+    /* height: 300px; */
+    width: 100%;
+    margin-top: 35px;
+}
+
+#mainimage1 {
+    height: 400px;
+    width: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    background: rgba(231, 228, 228, 0.6);
+    /* Semi-transparent background for better contrast */
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 80%;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+    .overlay-text {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+    }
+}
+
+#d3 {
+    margin-top: 15px;
+}
+
+#d3 {
+    text-align: center;
+}
+
+.why-choose-us {
+    display: flex;
+    justify-content: space-around;
+    /* Spreads the items evenly */
+    align-items: center;
+    /* Centers the items vertically */
+    flex-wrap: wrap;
+    /* Ensures it wraps on smaller screens */
+    margin-top: 20px;
+}
+
+.why-choose-us figure {
+    text-align: center;
+    margin: 0 20px;
+    /* Adds space between each figure */
+}
+
+.why-choose-us img {
+    width: 60px;
+    /* Adjust size of the icons */
+    height: auto;
+}
+
+.why-choose-us figcaption {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
+
+
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.design-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    /* Full viewport height */
+    background-color: #f5f5f5;
+    padding: 0 20px;
+}
+
+.design-content {
+    text-align: center;
+    max-width: 600px;
+    /* Limits the width to ensure it looks like the image */
+}
+
+.design-content h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.design-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 14px;
+    color: white;
+    background-color: #e74c3c;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* why home mantra  */
+
+.statistics-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.statistics-section h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.statistics-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+.stat p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* custmized storage solutions */
+
+.carousel-container {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.carousel {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 33.33%; /* Adjust this depending on how many items you want per slide */
+    padding: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 320px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* how it works */
+.how-it-works-section {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.how-it-works-section h2 {
+    display: flex;
+    font-size: 24px; /* Reduced size */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    justify-content: center;
+    
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Reduced gap */
+    margin-bottom: 20px;
+}
+
+.step {
+    text-align: center;
+    position: relative;
+}
+
+.step img {
+    width: 40px; /* Reduced image size */
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.step p {
+    font-size: 12px; /* Reduced text size */
+    color: #333;
+    width: 80px; /* Adjust width to maintain alignment */
+}
+
+.arrow {
+    width: 40px; /* Reduced width */
+    height: 2px;
+    background-color: transparent;
+    position: relative;
+}
+
+.arrow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-top: 2px dotted #777; /* More visible dotted line */
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    right: -7px; /* Adjusted arrowhead position */
+    width: 0;
+    height: 0;
+    /* border-left: 5px solid #777; */
+     /* Smaller arrowhead */
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Reduced button size */
+    font-size: 12px; /* Smaller font size */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #d62c1a;
+}
+
+
+/* connect with us */
+
+.connect-section {
+    text-align: center;
+    background-color: wheat;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.connect-section h2 {
+    font-size: 24px;
+    color: #4d3a3a;
+    margin-bottom: 10px;
+}
+
+.connect-section p {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.call-btn {
+    background-color: #39557d;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+}
+
+.btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+/* footer */
+.footer {
+    background-color: #222;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer .disclaimer {
+    font-style: italic;
+    font-size: 12px;
+    color: #bbb;
+}
+
+.footer a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #c0392b;
+}
+
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-float img {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+}
+
+.whatsapp-float:hover {
+    opacity: 0.8;
+}
+
+
+/* Pop-up form */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ddd;
+    z-index: 1000;
+}
+
+.thank-you-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #ddd;
+    z-index: 1000;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: red;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

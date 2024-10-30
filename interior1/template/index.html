@@ -1,0 +1,251 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <div id="d1">
+            <div class="container">
+                <h1 class="brand-title">HOME MANTRA <span>INTERIORS</span></h1>
+                <nav class="nav-links">
+                    <a href="{% url 'form' %}" class="quote-btn">Get Free Quote</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    
+
+
+
+
+
+    <div id="d2">
+        <img src="{% static 'maininterior.avif' %}" alt="Interior Design" id="mainimage1">
+        <div class="overlay-text">Achieve your dream interiors without compromising your finances</div>
+    </div>
+    <div id="d3">
+        <center>
+            <h3>Why Choose Us?</h3>
+        </center>
+        <div class="why-choose-us">
+            <figure>
+                <img src="{% static 'whychoose/homed.jpg' %}" alt="Personalized Designs">
+                <figcaption>Personalised Designs</figcaption>
+            </figure>
+            <figure>
+                <img src="{% static 'whychoose/5year.jpg' %}" alt="">
+                <figcaption>Flat 5 Year Warranty</figcaption>
+            </figure>
+            <figure>
+                <img src="{% static 'whychoose/nohidden.png' %}" alt="">
+                <figcaption>No Hidden Charges</figcaption>
+            </figure>
+            <figure>
+                <img src="{% static 'whychoose/images.png' %}" alt="">
+                <figcaption>Easy Emi's</figcaption>
+            </figure>
+            <figure>
+                <img src="{% static 'whychoose/download.jpeg' %}" alt="">
+                <figcaption>Home Delivery</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="design-container">
+        <div class="design-content">
+            <h3>The home design you crave</h3>
+            <p>When you give your home the Livspace touch, you get both beauty and functionality. We employ
+                state-of-the-art technology to ensure your home features a flawless look that lasts a very long time.
+            </p>
+            <a href="{% url 'form' %}" class="cta-button">Book Free Consultation</a>
+        </div>
+    </div>
+
+    <div class="statistics-section">
+        <h2>Why Home Mantra Interiors?</h2>
+        <div class="statistics-container">
+            <div class="stat">
+                <h3>Delivered</h3>
+                <p>1000+</p>
+            </div>
+            <div class="stat">
+                <h3>Designers</h3>
+                <p>24+</p>
+            </div>
+            <div class="stat">
+                <h3>Cities</h3>
+                <p>20+</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customized Storage Solutions -->
+    <div class="carousel-container">
+        <h2>Customized Storage Solutions</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item"><img src="{% static 'storage1/st9.jpg' %}" alt="Storage Image 1"></div>
+                <div class="carousel-item"><img src="{% static 'storage1/st8.jpg' %}" alt="Storage Image 2"></div>
+                <div class="carousel-item"><img src="{% static 'storage1/st7.jpg' %}" alt="Storage Image 3"></div>
+                <div class="carousel-item"><img src="{% static 'storage1/st6.jpg' %}" alt="Storage Image 4"></div>
+                <div class="carousel-item"><img src="{% static 'storage1/st5.jpg' %}" alt="Storage Image 5"></div>
+                <div class="carousel-item"><img src="{% static 'storage1/st4.jpg' %}" alt="Storage Image 6"></div>
+                <div class="carousel-item"><img src="{% static 'storage1/st3.jpg' %}" alt="Storage Image 7"></div>
+                <div class="carousel-item"><img src="{% static 'storage1/st2.jpg' %}" alt="Storage Image 8"></div>
+                <div class="carousel-item"><img src="{% static 'storage1/st1.jpg' %}" alt="Storage Image 9"></div>
+            </div>
+            <button class="prev" onclick="moveCarousel(this, -1)">&#10094;</button>
+            <button class="next" onclick="moveCarousel(this, 1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Personalized Space Kitchen Design -->
+    <div class="carousel-container">
+        <h2>Personalized Space Kitchen Design</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item"><img src="{% static 'kitchen/k1.webp' %}" alt="Kitchen Image 1"></div>
+                <div class="carousel-item"><img src="{% static 'kitchen/k2.webp' %}" alt="Kitchen Image 2"></div>
+                <div class="carousel-item"><img src="{% static 'kitchen/k3.webp' %}" alt="Kitchen Image 3"></div>
+                <div class="carousel-item"><img src="{% static 'kitchen/k4.webp' %}" alt="Kitchen Image 4"></div>
+                <div class="carousel-item"><img src="{% static 'kitchen/k5.jpeg' %}" alt="Kitchen Image 5"></div>
+                <div class="carousel-item"><img src="{% static 'kitchen/k6.webp' %}" alt="Kitchen Image 6"></div>
+                <div class="carousel-item"><img src="{% static 'kitchen/k7.jpeg' %}" alt="Kitchen Image 7"></div>
+                <div class="carousel-item"><img src="{% static 'kitchen/k8.jpeg' %}" alt="Kitchen Image 8"></div>
+                <div class="carousel-item"><img src="{% static 'kitchen/k9.webp' %}" alt="Kitchen Image 9"></div>
+            </div>
+            <button class="prev" onclick="moveCarousel(this, -1)">&#10094;</button>
+            <button class="next" onclick="moveCarousel(this, 1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Bedroom Interiors for Better Sleep -->
+    <div class="carousel-container">
+        <h2>Bedroom Interiors for Better Sleep</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item"><img src="{% static 'bedroom/bed1.jpg' %}" alt="Bedroom Image 1"></div>
+                <div class="carousel-item"><img src="{% static 'bedroom/bed2.jpg' %}" alt="Bedroom Image 2"></div>
+                <div class="carousel-item"><img src="{% static 'bedroom/bed3.jpg' %}" alt="Bedroom Image 3"></div>
+                <div class="carousel-item"><img src="{% static 'bedroom/bed4.jpg' %}" alt="Bedroom Image 4"></div>
+                <div class="carousel-item"><img src="{% static 'bedroom/bed5.webp' %}" alt="Bedroom Image 5"></div>
+                <div class="carousel-item"><img src="{% static 'bedroom/bed6.webp' %}" alt="Bedroom Image 6"></div>
+                <div class="carousel-item"><img src="{% static 'bedroom/bed7.jpg' %}" alt="Bedroom Image 7"></div>
+                <div class="carousel-item"><img src="{% static 'bedroom/bed8.jpg' %}" alt="Bedroom Image 8"></div>
+                <div class="carousel-item"><img src="{% static 'bedroom/bed9.jpg' %}" alt="Bedroom Image 9"></div>
+            </div>
+            <button class="prev" onclick="moveCarousel(this, -1)">&#10094;</button>
+            <button class="next" onclick="moveCarousel(this, 1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Elegant Eye Catching Living Room Design -->
+    <div class="carousel-container">
+        <h2>Elegant Eye-Catching Living Room Design</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item"><img src="{% static 'livingroom/liv1.jpg' %}" alt="Living Room Image 1">
+                </div>
+                <div class="carousel-item"><img src="{% static 'livingroom/liv12.jpg' %}" alt="Living Room Image 2">
+                </div>
+                <div class="carousel-item"><img src="{% static 'livingroom/liv3.jpg' %}" alt="Living Room Image 3">
+                </div>
+                <div class="carousel-item"><img src="{% static 'livingroom/liv4.jpg' %}" alt="Living Room Image 4">
+                </div>
+                <div class="carousel-item"><img src="{% static 'livingroom/liv5.jpg' %}" alt="Living Room Image 5">
+                </div>
+                <div class="carousel-item"><img src="{% static 'livingroom/liv6.webp' %}" alt="Living Room Image 6">
+                </div>
+                <div class="carousel-item"><img src="{% static 'livingroom/liv7.jpg' %}" alt="Living Room Image 7">
+                </div>
+                <div class="carousel-item"><img src="{% static 'livingroom/liv8.webp' %}" alt="Living Room Image 8">
+                </div>
+                <div class="carousel-item"><img src="{% static 'livingroom/liv9.webp' %}" alt="Living Room Image 9">
+                </div>
+            </div>
+            <button class="prev" onclick="moveCarousel(this, -1)">&#10094;</button>
+            <button class="next" onclick="moveCarousel(this, 1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- how it works -->
+
+    <div class="how-it-works-section">
+        <h2>How it works</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="{% static 'how/designer.png' %}" alt="Meet a designer">
+                <p>Meet a designer</p>
+            </div>
+            <div class="arrow"></div>
+            <div class="step">
+                <img src="{% static 'how/book.png' %}" alt="Book a renovation">
+                <p>(5% payment) Book a renovation</p>
+            </div>
+            <div class="arrow"></div>
+            <div class="step">
+                <img src="{% static 'how/begins.png' %}" alt="Execution begins">
+                <p>(50% payment) Execution begins</p>
+            </div>
+            <div class="arrow"></div>
+            <div class="step">
+                <img src="{% static 'how/100.png' %}" alt="Final installations">
+                <p>(100% payment) Final installations</p>
+            </div>
+            <div class="arrow"></div>
+            <div class="step">
+                <img src="{% static 'how/move.png' %}" alt="Move in and enjoy">
+                <p>Move in and enjoy!</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="{% url 'form' %}"> 
+                <button>BOOK FREE CONSULTATION</button> 
+            </a>
+        </div>
+    </div>
+
+    <!-- connect with us -->
+
+    <div class="connect-section">
+        <h2>Connect with us</h2>
+        <p>Reach out on WhatsApp or give us a call for the best home design experience.</p>
+        <div class="button-container">
+            <!-- Call Now Button -->
+            <a href="tel:+1234567890" class="btn call-btn">
+                <img src="{% static 'how/call.png' %}" alt="Call Icon">
+                CALL NOW
+            </a>
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/1234567890" class="btn whatsapp-btn" target="_blank">
+                <img src="{% static 'how/whatsapp.png' %}" alt="WhatsApp Icon">
+                WHATSAPP
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Home Mantra Interiors. All rights reserved.</p>
+            <p class="disclaimer">Designs tailored for elegance, crafted with passion.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <img src="{% static 'how/whatsapp.png' %}" alt="WhatsApp Icon">
+    </a>
+
+    <script src="{% static 'js/index.js' %}"></script>
+
+</body>
+
+</html>
